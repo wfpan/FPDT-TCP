@@ -1,13 +1,13 @@
-# FPDT-TCP
-This is the replication package for our work submitted to IEEE Transactions on Software Engineering, i.e., Weifeng Pan, Zijiang Yang, Hua Ming, Wen Li, Jingpeng Yan, Wenjun Xu, and Jiale Wang. XXXXXXXXX. IEEE Transactions on Software Engineering, 2025. [[PDF](#)]
+# Dataset
+This directory contains the dataset used in our work.
 
-# RQ1~RQ3
-These directories contain the results obtained for each RQ. 
+Due to its large size, the dataset cannot be hosted on GitHub. We have uploaded it to Zenodo at [https://zenodo.org/records/20613449](https://link.wtturl.cn/?target=https%3A%2F%2Fzenodo.org%2Frecords%2F20613449&scene=im&aid=497858&lang=zh).
 
-# Code
-The source code of our proposed method will be publicly available in this directory once the manuscript is accepted. For pre-publication access, researchers may request the code via email (wfpan@zjgsu.edu.cn), with the requirement that requests are sent from an institutional email account. Non-institutional requests will not be addressed.
+The dataset includes the source code for all subject projects, identified by their specific commit hashes. Each project's source code is organized into a directory named after its corresponding commit hash. 
 
-# Cite our work
-If you use our dataset or tool, please cite our work.
+The source code for all subject system can be found in Dataset\Projects\ (organized by different project names). For instance, the source code for assertj at commit 0f78d7e2ccbeb7bb39ebc5f0510ba84df7c52a5a is located in Dataset\Projects\assertj\0f78d7e2ccbeb7bb39ebc5f0510ba84df7c52a5a.
 
-Weifeng Pan, Zijiang Yang, Hua Ming, Wen Li, Jingpeng Yan, Wenjun Xu, and Jiale Wang. XXXXXXXXX. IEEE Transactions on Software Engineering, 2025. [[PDF](#)]
+The dataset encompasses 
+- the method-level test coverage data (e.g., Dataset\Projects\assertj\0f78d7e2ccbeb7bb39ebc5f0510ba84df7c52a5a\clover-report-method-1.1.xml).
+- the fault matrix (Dataset\FaultMatrices)
+- all empirical results derived from our experiments (Dataset\Results\csv).
