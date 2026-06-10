@@ -1,0 +1,4 @@
+paired methods,Wilcoxon p,Cliff's delta,effect size (delta),Wilcoxon r, effect size (r) 
+FPDT-TCP vs. FPDT-TCP-C2FP,4.71E-11,-0.75,large,-0.77509566,large
+FPDT-TCP vs. FPDT-TCP-ITF,0.004687493,-0.345454545,medium,-0.375169377,medium
+FPDT-TCP vs. FPDT-TCP-QS,1.49E-06,-0.807692308,large,-0.655211652,large
