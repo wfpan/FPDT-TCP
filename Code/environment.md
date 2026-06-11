@@ -1,1 +1,2 @@
+# Running Environment
 FPDT-TCP was developed using Java (JDK 17.0.9) within the Eclipse IDE (Version 4.30.0). All experiments were performed on a ThinkPad laptop powered by an Intel Core i9-13900H processor, 32 GB of RAM, and the 64-bit Windows 11 Home operating system.
