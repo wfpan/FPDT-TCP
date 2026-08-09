@@ -1,0 +1,6 @@
+This directory contains the results performed using *PTF*.
+
+The results indicate that our approach, FPDT-TCP, performs competitively under PTF as well. Specifically: 
+-  FPDT-TCP achieved the best rank (lowest ranking value) among all compared methods in the average ranking of the Friedman test (p≪0.05). For details, please refer to the *PTF-aggregated.tex* file (the first table therein).
+-  FPDT-TCP significantly outperformed NOP, GAP, and ARP (Wilcoxon signed-rank test, p<0.05). For details, please refer to the *PTF-aggregated.csv_WilcP_CliffDelta_WilcR_effectSize_result.csv* file
+-  While no significant difference was found compared with TMP, TCM, FPP, TCM-QS, MTK, and MTK-QS (Wilcoxon signed-rank test, p>0.05), the effect size (Cliff’s delta) analysis showed *medium* practical significance against TCM TCM-QS, and MTK, *large* practical significance against NOP, TMP, GAP, ARP, and FPP, and *negligible* significance against MTK-QS. For details, please refer to the *PTF-aggregated.csv_WilcP_CliffDelta_WilcR_effectSize_result.csv* file
