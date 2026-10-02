@@ -1,0 +1,162 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Results}
+\author{Weifeng Pan@ZJGSU}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\oddsidemargin 0in \topmargin 0in\maketitle
+\section{Tables of Friedman, Bonferroni-Dunn, Holm, Hochberg and Hommel Tests}
+\begin{table}[!htp]
+\centering
+\caption{Average Rankings of the algorithms
+}\begin{tabular}{c|c}
+Algorithm&Ranking\\
+\hline
+FPDT-TCP-C2FP&3.5000\\
+FPDT-TCP-ITF&1.7500\\
+FPDT-TCP-QS&2.9000\\
+FPDT-TCP&1.8500\\
+\end{tabular}
+\end{table}
+
+
+Friedman statistic considering reduction performance (distributed according to chi-square with 3 degrees of freedom: 12.869999999999997.
+
+
+P-value computed by Friedman Test: 0.004926340634697879.\newline
+
+Iman and Davenport statistic considering reduction performance (distributed according to F-distribution with 3 and 27 degrees of freedom: 6.761821366024517.
+
+
+P-value computed by Iman and Daveport Test: 0.0015099609364450093.\newline
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Hochberg Table for $\alpha=0.05$}
+\begin{tabular}{ccccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$&Holm/Hochberg/Hommel\\
+\hline
+3&FPDT-TCP-C2FP&3.0310889132455356&0.0024367348089890523&0.016666666666666666\\
+2&FPDT-TCP-QS&1.991858428704209&0.04638659328139868&0.025\\
+1&FPDT-TCP&0.17320508075688712&0.862490230135922&0.05\\
+\hline
+\end{tabular}
+\end{table}
+Bonferroni-Dunn's procedure rejects those hypotheses that have a p-value $\le0.016666666666666666$.
+
+
+Holm's procedure rejects those hypotheses that have a p-value $\le0.025$.
+
+
+Hochberg's procedure rejects those hypotheses that have a p-value $\le0.016666666666666666$.
+
+
+Hommel's procedure rejects those hypotheses that have a p-value $\le0.025$.
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Hochberg Table for $\alpha=0.10$}
+\begin{tabular}{ccccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$&Holm/Hochberg/Hommel\\
+\hline
+3&FPDT-TCP-C2FP&3.0310889132455356&0.0024367348089890523&0.03333333333333333\\
+2&FPDT-TCP-QS&1.991858428704209&0.04638659328139868&0.05\\
+1&FPDT-TCP&0.17320508075688712&0.862490230135922&0.1\\
+\hline
+\end{tabular}
+\end{table}
+Bonferroni-Dunn's procedure rejects those hypotheses that have a p-value $\le0.03333333333333333$.
+
+
+Holm's procedure rejects those hypotheses that have a p-value $\le0.1$.
+
+
+Hochberg's procedure rejects those hypotheses that have a p-value $\le0.05$.
+
+
+Hommel's procedure rejects those hypotheses that have a p-value $\le0.05$.
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Adjusted $p$-values}
+\begin{tabular}{ccccccc}
+i&algorithm&unadjusted $p$&$p_{Bonf}$&$p_{Holm}$&$p_{Hoch}$&$p_{Homm}$\\
+\hline
+1&FPDT-TCP-C2FP&0.0024367348089890523&0.007310204426967157&0.007310204426967157&0.007310204426967157&0.007310204426967157\\
+2&FPDT-TCP-QS&0.04638659328139868&0.13915977984419603&0.09277318656279736&0.09277318656279736&0.09277318656279736\\
+3&FPDT-TCP&0.862490230135922&2.587470690407766&0.862490230135922&0.862490230135922&0.862490230135922\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Shaffer Table for $\alpha=0.05$}
+\begin{tabular}{cccccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$&Holm&Shaffer\\
+\hline
+6&FPDT-TCP-C2FP vs. FPDT-TCP-ITF&3.0310889132455356&0.0024367348089890523&0.008333333333333333&0.008333333333333333\\5&FPDT-TCP-C2FP vs. FPDT-TCP&2.8578838324886484&0.004264764914030548&0.01&0.016666666666666666\\4&FPDT-TCP-ITF vs. FPDT-TCP-QS&1.991858428704209&0.04638659328139868&0.0125&0.016666666666666666\\3&FPDT-TCP-QS vs. FPDT-TCP&1.8186533479473217&0.06896433333905398&0.016666666666666666&0.016666666666666666\\2&FPDT-TCP-C2FP vs. FPDT-TCP-QS&1.0392304845413265&0.29869755599497005&0.025&0.025\\1&FPDT-TCP-ITF vs. FPDT-TCP&0.17320508075688712&0.862490230135922&0.05&0.05\\\hline
+\end{tabular}
+\end{table}
+Nemenyi's procedure rejects those hypotheses that have a p-value $\le0.008333333333333333$.
+
+
+Holm's procedure rejects those hypotheses that have a p-value $\le0.0125$.
+
+
+Shaffer's procedure rejects those hypotheses that have a p-value $\le0.008333333333333333$.
+
+
+Bergmann's procedure rejects these hypotheses:
+
+
+\begin{itemize}
+
+
+\item FPDT-TCP-C2FP vs. FPDT-TCP-ITF\item FPDT-TCP-C2FP vs. FPDT-TCP\end{itemize}
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Shaffer Table for $\alpha=0.10$}
+\begin{tabular}{cccccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$&Holm&Shaffer\\
+\hline
+6&FPDT-TCP-C2FP vs. FPDT-TCP-ITF&3.0310889132455356&0.0024367348089890523&0.016666666666666666&0.016666666666666666\\5&FPDT-TCP-C2FP vs. FPDT-TCP&2.8578838324886484&0.004264764914030548&0.02&0.03333333333333333\\4&FPDT-TCP-ITF vs. FPDT-TCP-QS&1.991858428704209&0.04638659328139868&0.025&0.03333333333333333\\3&FPDT-TCP-QS vs. FPDT-TCP&1.8186533479473217&0.06896433333905398&0.03333333333333333&0.03333333333333333\\2&FPDT-TCP-C2FP vs. FPDT-TCP-QS&1.0392304845413265&0.29869755599497005&0.05&0.05\\1&FPDT-TCP-ITF vs. FPDT-TCP&0.17320508075688712&0.862490230135922&0.1&0.1\\\hline
+\end{tabular}
+\end{table}
+Nemenyi's procedure rejects those hypotheses that have a p-value $\le0.016666666666666666$.
+
+
+Holm's procedure rejects those hypotheses that have a p-value $\le0.025$.
+
+
+Shaffer's procedure rejects those hypotheses that have a p-value $\le0.016666666666666666$.
+
+
+Bergmann's procedure rejects these hypotheses:
+
+
+\begin{itemize}
+
+
+\item FPDT-TCP-C2FP vs. FPDT-TCP-ITF
+\item FPDT-TCP-C2FP vs. FPDT-TCP
+\end{itemize}
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Adjusted $p$-values}
+\begin{tabular}{cccccccc}
+i&hypothesis&unadjusted $p$&$p_{Neme}$&$p_{Holm}$&$p_{Shaf}$&$p_{Berg}$\\
+\hline
+1&FPDT-TCP-C2FP vs .FPDT-TCP-ITF&.0024&.0146&.0146&.0146&.0146\\2&FPDT-TCP-C2FP vs .FPDT-TCP&.0043&.0256&.0213&.0146&.0146\\3&FPDT-TCP-ITF vs .FPDT-TCP-QS&.0464&.2783&.1855&.1392&.1392\\4&FPDT-TCP-QS vs .FPDT-TCP&.0690&.4138&.2069&.2069&.1392\\5&FPDT-TCP-C2FP vs .FPDT-TCP-QS&.2987&1.7922&.5974&.5974&.5974\\6&FPDT-TCP-ITF vs .FPDT-TCP&.8625&5.1749&.8625&.8625&.8625\\\hline
+\end{tabular}
+\end{table}
+
+\end{landscape}\end{document}

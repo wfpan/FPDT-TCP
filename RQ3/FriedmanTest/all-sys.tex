@@ -1,0 +1,154 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Results}
+\author{Weifeng Pan@ZJGSU}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\oddsidemargin 0in \topmargin 0in\maketitle
+\section{Tables of Friedman, Bonferroni-Dunn, Holm, Hochberg and Hommel Tests}
+\begin{table}[!htp]
+\centering
+\caption{Average Rankings of the algorithms
+}\begin{tabular}{c|c}
+Algorithm&Ranking\\
+\hline
+FPDT-TCP-C2FP&3.3836\\
+FPDT-TCP-ITF&2.0822\\
+FPDT-TCP-QS&2.9384\\
+FPDT-TCP&1.5959\\
+\end{tabular}
+\end{table}
+
+
+Friedman statistic considering reduction performance (distributed according to chi-square with 3 degrees of freedom: 86.05890410959113.
+
+
+P-value computed by Friedman Test: 4.188449587161358E-11.\newline
+
+Iman and Davenport statistic considering reduction performance (distributed according to F-distribution with 3 and 216 degrees of freedom: 46.6089214504331.
+
+
+P-value computed by Iman and Daveport Test: -4.440892098500626E-16.\newline
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Hochberg Table for $\alpha=0.05$}
+\begin{tabular}{ccccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$&Holm/Hochberg/Hommel\\
+\hline
+3&FPDT-TCP-C2FP&8.36584298006624&5.968663914618565E-17&0.016666666666666666\\
+2&FPDT-TCP-QS&6.282395494609117&3.3339538191370075E-10&0.025\\
+1&FPDT-TCP-ITF&2.2757657148839083&0.022860035801384963&0.05\\
+\hline
+\end{tabular}
+\end{table}
+Bonferroni-Dunn's procedure rejects those hypotheses that have a p-value $\le0.016666666666666666$.
+
+
+Hochberg's procedure rejects those hypotheses that have a p-value $\le0.05$.
+
+
+Hommel's procedure rejects all hypotheses.
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Hochberg Table for $\alpha=0.10$}
+\begin{tabular}{ccccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$&Holm/Hochberg/Hommel\\
+\hline
+3&FPDT-TCP-C2FP&8.36584298006624&5.968663914618565E-17&0.03333333333333333\\
+2&FPDT-TCP-QS&6.282395494609117&3.3339538191370075E-10&0.05\\
+1&FPDT-TCP-ITF&2.2757657148839083&0.022860035801384963&0.1\\
+\hline
+\end{tabular}
+\end{table}
+Bonferroni-Dunn's procedure rejects those hypotheses that have a p-value $\le0.03333333333333333$.
+
+
+Hochberg's procedure rejects those hypotheses that have a p-value $\le0.1$.
+
+
+Hommel's procedure rejects all hypotheses.
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Adjusted $p$-values}
+\begin{tabular}{ccccccc}
+i&algorithm&unadjusted $p$&$p_{Bonf}$&$p_{Holm}$&$p_{Hoch}$&$p_{Homm}$\\
+\hline
+1&FPDT-TCP-C2FP&5.968663914618565E-17&1.7905991743855694E-16&1.7905991743855694E-16&1.7905991743855694E-16&1.7905991743855694E-16\\
+2&FPDT-TCP-QS&3.3339538191370075E-10&1.0001861457411023E-9&6.667907638274015E-10&6.667907638274015E-10&6.667907638274015E-10\\
+3&FPDT-TCP-ITF&0.022860035801384963&0.06858010740415489&0.022860035801384963&0.022860035801384963&0.022860035801384963\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Shaffer Table for $\alpha=0.05$}
+\begin{tabular}{cccccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$&Holm&Shaffer\\
+\hline
+6&FPDT-TCP-C2FP vs. FPDT-TCP&8.36584298006624&5.968663914618565E-17&0.008333333333333333&0.008333333333333333\\5&FPDT-TCP-QS vs. FPDT-TCP&6.282395494609117&3.3339538191370075E-10&0.01&0.016666666666666666\\4&FPDT-TCP-C2FP vs. FPDT-TCP-ITF&6.090077265182332&1.1285620703359083E-9&0.0125&0.016666666666666666\\3&FPDT-TCP-ITF vs. FPDT-TCP-QS&4.006629779725209&6.159128943691924E-5&0.016666666666666666&0.016666666666666666\\2&FPDT-TCP-ITF vs. FPDT-TCP&2.2757657148839083&0.022860035801384963&0.025&0.025\\1&FPDT-TCP-C2FP vs. FPDT-TCP-QS&2.083447485457123&0.03721045373820055&0.05&0.05\\\hline
+\end{tabular}
+\end{table}
+Nemenyi's procedure rejects those hypotheses that have a p-value $\le0.008333333333333333$.
+
+
+Shaffer's procedure rejects those hypotheses that have a p-value $\le0.008333333333333333$.
+
+
+Bergmann's procedure rejects these hypotheses:
+
+
+\begin{itemize}
+
+
+\item FPDT-TCP-C2FP vs. FPDT-TCP-ITF\item FPDT-TCP-C2FP vs. FPDT-TCP-QS\item FPDT-TCP-C2FP vs. FPDT-TCP\item FPDT-TCP-ITF vs. FPDT-TCP-QS\item FPDT-TCP-ITF vs. FPDT-TCP\item FPDT-TCP-QS vs. FPDT-TCP\end{itemize}
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Holm / Shaffer Table for $\alpha=0.10$}
+\begin{tabular}{cccccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$&Holm&Shaffer\\
+\hline
+6&FPDT-TCP-C2FP vs. FPDT-TCP&8.36584298006624&5.968663914618565E-17&0.016666666666666666&0.016666666666666666\\5&FPDT-TCP-QS vs. FPDT-TCP&6.282395494609117&3.3339538191370075E-10&0.02&0.03333333333333333\\4&FPDT-TCP-C2FP vs. FPDT-TCP-ITF&6.090077265182332&1.1285620703359083E-9&0.025&0.03333333333333333\\3&FPDT-TCP-ITF vs. FPDT-TCP-QS&4.006629779725209&6.159128943691924E-5&0.03333333333333333&0.03333333333333333\\2&FPDT-TCP-ITF vs. FPDT-TCP&2.2757657148839083&0.022860035801384963&0.05&0.05\\1&FPDT-TCP-C2FP vs. FPDT-TCP-QS&2.083447485457123&0.03721045373820055&0.1&0.1\\\hline
+\end{tabular}
+\end{table}
+Nemenyi's procedure rejects those hypotheses that have a p-value $\le0.016666666666666666$.
+
+
+Shaffer's procedure rejects those hypotheses that have a p-value $\le0.016666666666666666$.
+
+
+Bergmann's procedure rejects these hypotheses:
+
+
+\begin{itemize}
+
+
+\item FPDT-TCP-C2FP vs. FPDT-TCP-ITF
+\item FPDT-TCP-C2FP vs. FPDT-TCP-QS
+\item FPDT-TCP-C2FP vs. FPDT-TCP
+\item FPDT-TCP-ITF vs. FPDT-TCP-QS
+\item FPDT-TCP-ITF vs. FPDT-TCP
+\item FPDT-TCP-QS vs. FPDT-TCP
+\end{itemize}
+
+
+\begin{table}[!htp]
+\centering\tiny
+\caption{Adjusted $p$-values}
+\begin{tabular}{cccccccc}
+i&hypothesis&unadjusted $p$&$p_{Neme}$&$p_{Holm}$&$p_{Shaf}$&$p_{Berg}$\\
+\hline
+1&FPDT-TCP-C2FP vs .FPDT-TCP&.0000&.0000&.0000&.0000&.0000\\2&FPDT-TCP-QS vs .FPDT-TCP&.0000&.0000&.0000&.0000&.0000\\3&FPDT-TCP-C2FP vs .FPDT-TCP-ITF&.0000&.0000&.0000&.0000&.0000\\4&FPDT-TCP-ITF vs .FPDT-TCP-QS&.0001&.0004&.0002&.0002&.0001\\5&FPDT-TCP-ITF vs .FPDT-TCP&.0229&.1372&.0457&.0457&.0457\\6&FPDT-TCP-C2FP vs .FPDT-TCP-QS&.0372&.2233&.0457&.0457&.0457\\\hline
+\end{tabular}
+\end{table}
+
+\end{landscape}\end{document}
